@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario para lista</h1>
+    <p>Preencha os campos para entrar na lista dos ++ 😎.</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label for= "nome">Coloque seu nome: <input id= "nome" type="text" required/></label>
+            <label for="sobrenome">Coloque seu ultimo nome: <input id= "sobrenome" type="text" required/></label>
+            <label for="email">Coloque seu email: <input id= "email" type="email" required/></label>
+            <label for= "senha">Digite uma senha: <input id= "senha" type="password" pattern="[a-z0-5]{8,}" required/></label>
+        </fieldset>
+        <fieldset>
+            <label for="acc-midia"><input type="radio" name="tipo-conta" id="acc-midia" /> Conta Midia</label>
+            <label for="acc-pro"><input type="radio" name="tipo-conta" id="acc-pro"> Conta Pro Max Plus Premium</label>
+            <label for="termos"><input type="checkbox" id="termos"  required/> Concordo com os <a href="https://www.freecodecamp.org/news/terms-of-service/">Termos e Serviços</a></label>
+        </fieldset>
+        <fieldset>
+            <label>Adicione uma foto: <input type="file"></label>
+            <label for="">Qual sua idade (anos):<input type="number" min="13" max="120"/></label>
+        </fieldset>
+        <input class="btn-enviar" type="submit" value="Enviar">
+    </form> 
+</body>
+</html>
