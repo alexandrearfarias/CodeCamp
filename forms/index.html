@@ -17,13 +17,25 @@
             <label for= "senha">Digite uma senha: <input id= "senha" type="password" pattern="[a-z0-5]{8,}" required/></label>
         </fieldset>
         <fieldset>
-            <label for="acc-midia"><input type="radio" name="tipo-conta" id="acc-midia" /> Conta Midia</label>
-            <label for="acc-pro"><input type="radio" name="tipo-conta" id="acc-pro"> Conta Pro Max Plus Premium</label>
-            <label for="termos"><input type="checkbox" id="termos"  required/> Concordo com os <a href="https://www.freecodecamp.org/news/terms-of-service/">Termos e Serviços</a></label>
+            <label for="acc-midia"><input class="inline" type="radio" name="tipo-conta" id="acc-midia" /> Conta Midia</label>
+            <label for="acc-pro"><input class="inline" type="radio" name="tipo-conta" id="acc-pro"> Conta Pro Max Plus Premium</label>
+            <label for="termos"><input class="inline" type="checkbox" id="termos"  required/> Concordo com os <a href="https://www.freecodecamp.org/news/terms-of-service/">Termos e Serviços</a></label>
         </fieldset>
         <fieldset>
-            <label>Adicione uma foto: <input type="file"></label>
-            <label for="">Qual sua idade (anos):<input type="number" min="13" max="120"/></label>
+            <label for="foto">Adicione uma foto: <input type="file" id="foto"></label>
+            <label for="idade">Qual sua idade (anos):<input type="number" min="13" max="120" id="idade"/></label>
+            <label for="referencia">Como ficou sabendo da gente?
+                <select id="referencia">
+                    <option value="">(selecione um)</option>
+                    <option value="1">GitHub</option>
+                    <option value="2">WhatsApp</option>
+                    <option value="3">Insta</option>
+                    <option value="4">Outros</option>
+                </select>
+            </label>
+            <label for="bio">Faça uma pequena Bio:
+                <textarea rows="3" cols="30" id="bio" placeholder="My name's Elon Musk and i destroy the twitter..."></textarea>
+            </label>
         </fieldset>
         <input class="btn-enviar" type="submit" value="Enviar">
     </form> 
