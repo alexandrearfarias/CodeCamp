@@ -1,0 +1,70 @@
+body{
+    background-image:url(https://pocosdecaldas.mg.gov.br/wp-content/uploads/2020/06/Academias-1024x512.jpeg);
+    background-size: cover;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, p{
+    color: rgb(218, 181, 154);
+    text-shadow: 2px 2px 2.2px black;
+    text-align: center;
+    
+}
+
+img{
+    display: block;
+    width: 100px;
+    margin: 2px 40%;
+}
+
+form{
+    width: 500px;
+    min-width: 300px;
+    margin: auto;
+    background-color: rgba(230, 134, 79, 0.877);
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid rgba(151, 87, 57, 0.973);
+    margin-bottom: 24px;
+}
+
+input, select, textarea{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 7px;
+    padding: 6px;
+    border: 0;
+}
+
+input[type="submit"]{
+    width: 50%;
+    margin: 0 25%;
+}
+
+.seletor{
+    width: unset;
+    vertical-align: middle;
+}
+
+.seletores{
+    display:block;
+}
+
+.inside{
+    text-align: left;
+    color: black;
+    text-shadow: none;
+    margin-top: 0;
+}
+
+fieldset{
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: solid 3px rgba(133, 59, 16, 0.301);
+    border-radius: 5px;
+}
+
+fieldset:last-of-type{
+    border-bottom:none;
+}

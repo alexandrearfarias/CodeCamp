@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formulario da Bombat Suplementos</h1>
+    <p id="description">Pesquisa de satisfação para os clientes da loja!</p>
+    <form id="survey-form" action="#" method="post">
+        <fieldset>
+            <label for="name-label" id="name-label">Nome: <input id="name" type="text" placeholder="Abidoral" required/></label>
+            <label for="email-label" id="email-label">Email: <input id="email" type="email" placeholder="endereco@email.com" required/></label>
+            <label for="number-label" id="number-label">Idade(opcional): <input id="number" type="number" min="12" max="120" placeholder="12-120" /></label>
+        </fieldset>
+        <fieldset>
+            <label for="role">Qual seu nivel de satisfação com nossos serviços?
+                <select name="role" id="dropdown">
+                    <option value="">(Selecione um)</option>
+                    <option value="0">Muito Insatisfeito</option>
+                    <option value="1">Insatisfeito</option>
+                    <option value="2">Abaixo do esperado</option>
+                    <option value="3">Neutro</option>
+                    <option value="4">Satisfeito</option>
+                    <option value="5">Muito Satisfeito</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p class="inside">Quem você indica como funcionario do mes?</p>
+            <label class="seletores" for="FJunior"><input class="seletor" type="radio" name="funcionario-mês" id="Fmes" value="A" required/> Junior</label>
+            <label class="seletores" for="FXablau"><input class="seletor" type="radio" name="funcionario-mês" id="Fmes" value="B" required/> Xablau</label>
+        </fieldset>
+        <fieldset>
+            <p class="inside">Por onde ficou sabendo da nossa loja?</p>
+            <label class="seletores" for="insta"><input class="seletor" type="checkbox" id="insta" value="1"> Instagram</label>
+            <label class="seletores" for="tiktok"><input class="seletor" type="checkbox"  id="tiktok" value="2"> TikTok</label>
+            <label class="seletores" for="face"><input class="seletor" type="checkbox" id="face" value="3"> Facebook</label>
+            <label class="seletores" for="zap"><input class="seletor" type="checkbox" id="zap" value="4"> WhatsApp</label>
+            <label class="seletores" for="amigos"><input class="seletor" type="checkbox" id="amigos" value="5"> Amigos e familiares</label>
+            <label class="seletores" for="other"><input class="seletor" type="checkbox" id="other" value="6"> Outros</label>
+        </fieldset>
+        <fieldset>
+            <label for="sugestoes">Caso tenha alguma sugestão de como melhorar, por favor comente aqui:
+                <textarea id="sugestoes" cols="30" rows="10" placeholder="Melhorar aspecto X da loja..."></textarea></label>
+        </fieldset>
+        <input type="submit" value="Enviar" id="submit">
+    </form>
+    
+</body>
+</html>
